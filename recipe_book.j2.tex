@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage[contents, index, number]{cuisine}
+\usepackage[margin=1in]{geometry}
+\usepackage{makeidx}
+
+% Title and Information
+\title{Recipe Book}
+\author{Jonathan Lowe}
+\date{12-16-2018}
+\makeindex
+
+% Cuisine options
+\RecipeWidths{\textwidth}{3cm}{0.8cm}{3.5cm}{1cm}{1.7cm}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+%% for section, recipes in sections
+\section{\VAR{section}}
+
+%% for recipe in recipes
+\input{\VAR{recipe}}
+%% endfor
+
+%% endfor
+\end{document}
